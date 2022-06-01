@@ -24,11 +24,7 @@ server.
     select it. (You might need to click on "ALL" instead of "RECENT" in order
     to see it.)
 -   Click the `Create Application` button.
--   On the next screen, click `Create app`. The default region is fine.
--   On the next screen, select `Java` as a language and `Standard` as an
-    environment.
--   When you see `Your App Engine app has successfully been created`, you're
-    done!
+-   On the next screen, click `Create app` or `Next`. The default region is fine.
 
 Now when you navigate to
 [https://console.cloud.google.com/appengine](https://console.cloud.google.com/appengine),
@@ -42,7 +38,7 @@ you need to enable App Engine for your service account.
 -   Navigate to
     [https://console.cloud.google.com/cloud-build/settings/service-account](https://console.cloud.google.com/cloud-build/settings/service-account).
 -   Make sure your project is selected in the dropdown at the top.
--   If you are prompted to enable the Cloud Build API, do so.
+-   If you are prompted to enable the Cloud Build API, do so then return to the [original page](https://console.cloud.google.com/cloud-build/settings/service-account)
 -   Change the `App Engine` service to `Enabled`.
 -   If a dialog opens, click the `Skip` button to close it.
 
@@ -61,7 +57,7 @@ First, make these changes to your code. (You only need to do this once.)
 -   Open the
     <walkthrough-editor-open-file
         filePath="software-product-sprint/portfolio/pom.xml">
-      pom.xml
+      software-product-sprint/portfolio/pom.xml
     </walkthrough-editor-open-file>
     file.
 -   Change `YOUR_PROJECT_ID_HERE` to your project ID.
@@ -80,7 +76,8 @@ If you see an error that says `The current Google Cloud project does
 not contain an App Engine application`, then make sure you created
 an App Engine application in the previous step!
 
-If you see an error that tells you to run `gcloud auth login`, rerun `mvn
+If you see an error that tells you to run `gcloud auth login`, refresh
+the page, then rerun `mvn
 package appengine:deploy` and see if it works. At the time of writing, there
 seems to be a bug in which authentication details don't always apply.
 
@@ -159,7 +156,8 @@ to include your name.
 
 ## Example
 
-The `examples/stanley` directory contains an example webpage. It contains
+The `examples/stanley` directory (inside the `software-product-sprint/walkthrough/week-1-web-development` directory) 
+contains an example webpage. It contains
 several files and directories:
 
 -   <walkthrough-editor-open-file
@@ -366,6 +364,9 @@ To commit changes, run:
 ```
 git commit -m "YOUR COMMIT MESSAGE"
 ```
+
+You'll be using git to manage all your work during SPS. You can learn more about
+how we'll use git in SPS [here](https://sites.google.com/sps-program.com/students/technical-resources/using-git).
 
 ## Pull Requests
 
