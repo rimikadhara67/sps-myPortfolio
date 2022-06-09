@@ -40,7 +40,7 @@ nav{
     margin:0;
 }
 
-ul li{
+.header-nav .divider{
     list-style: none;
     text-align: center;
     display:inline;
@@ -48,22 +48,22 @@ ul li{
     border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-ul li:first-child{
+.header-nav .divider:first-child{
     border-left: none;
 }
 
-ul li a{
+.header-nav .divider a{
     text-decoration: none;
     padding: 0 25px;
     display:block;
     color:rgb(255, 255, 255);
 }
 
-ul li a:hover{
+.header-nav .divider a:hover{
     transition: smooth;
     transform: translateY(-25%);
     color:rgb(47, 202, 202)
-
+    
 }
 
 .center{
@@ -98,12 +98,32 @@ form{
     color: white;
 }
 
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+.social-row{
+    position:fixed;
+    display:flex;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    list-style:none;
+}
+.social-row img{
+    width: 12vw;
+    height: 12vw;
+    border-radius:25%;
+    padding:20px;
 }
 
-#greeting-container {
-  margin-top: 20px;
+button{
+    top:50%;
+    left:50%;
+    transform:translate(-255px, 125px);
+    position:fixed;
+    width:500px;
+    height:50px;
+    border-width:0px;
+    cursor: pointer;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.7);
 }
