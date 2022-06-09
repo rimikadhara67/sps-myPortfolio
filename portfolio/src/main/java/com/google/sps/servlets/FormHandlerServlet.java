@@ -11,7 +11,8 @@ public class FormHandlerServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
+    response.setContentType("text/html;");
+    
     // Get the value entered in the form.
     String clientName = request.getParameter("clientName");
     String clientEmail = request.getParameter("clientEmail");
