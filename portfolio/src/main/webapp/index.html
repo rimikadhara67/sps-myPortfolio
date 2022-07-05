@@ -1,19 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rimika's Website Portfolio</title>
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fbbcfbb570.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css
+    rel="stylesheet" />
   </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+  <body onLoad="showServerTime();">
+    <header>
+      <nav id="nav">
+        <div class="header-name">
+          <a href="index.html">rimikadhara.com</a>
+        </div>
+        <div class="right">
+          <ul class="header-nav">
+            <li class="divider">
+              <a href="index.html">
+                <div class="icon">
+                  <i class="fa-solid fa-house" aria-hidden="true"></i>
+                </div>
+                <div class="name" data-text="Home">Home</div>
+              </a>
+            </li>
+            <li class="divider">
+                <a href="about.html">
+                  <div class="icon">
+                    <i class="fa-solid fa-user" aria-hidden="true"></i>
+                  </div>
+                  <div class="name" data-text="About">About</div>
+                </a>
+              </li>
+            <li class="divider">
+              <a href="portfolio.html">
+                <div class="icon">
+                  <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <div class="name" data-text="Portfolio">Portfolio</div>
+              </a>
+            </li>
+            <li class="divider">
+              <a href="resume.pdf" target="_blank">
+                <div class="icon">
+                  <i class="fa-solid fa-file" aria-hidden="true"></i>
+                </div>
+                <div class="name" data-text="Resume">Resume</div>
+              </a>
+            </li>
+            <li class="divider">
+              <a
+                href="https://www.linkedin.com/in/rimika-dhara/"
+                target="_blank"
+              >
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </div>
+                <div class="name" data-text="LinkedIn">LinkedIn</div>
+              </a>
+            </li>
+            <li class="divider">
+              <a href="https://github.com/rimika-dhara" target="_blank">
+                <div class="icon">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </div>
+                <div class="name" data-text="GitHub">GitHub</div>
+              </a>
+            </li>
+            <li class="divider">
+              <a href="contact.html">
+                <div class="icon">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="name" data-text="Contact">Contact</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="center">
+        <div class="center-imgForm">
+          <a href="form.html">
+            <img src="images/Rimika.png" alt="Picture of Rimika Dhara" />
+          </a>
+        </div>
+        <div class="center-text">
+          <h1>Rimika Dhara</h1></br>
+          <h3>
+            Computer Science & Data Science  B.S.  |  Neuroscience minor
+          </h3>
+          <h4>University of Minnesota - Twin Cities</h4>
+          <h5>Class of 2025</h5>
+        </br>
+          <h4>
+            •  Click on my picture to send me a message and connect with me
+            directly!  •
+          </h4></br>
+          <p id="date-container"></p>
+        </br>
+        </div>
+      </div>
+    </header>    
   </body>
 </html>
